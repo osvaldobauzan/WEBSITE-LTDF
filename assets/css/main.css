@@ -2734,7 +2734,12 @@ input, select, textarea {
 	}
 
 	body.academy-page .coach-card p {
-		margin-bottom: 0;
+		margin-bottom: 1.3em;
+	}
+
+	body.academy-page .coach-card .button {
+		display: inline-block;
+		margin-top: 0.5em;
 	}
 
 	body.academy-page .gallery-card {
@@ -2744,30 +2749,44 @@ input, select, textarea {
 		overflow: hidden;
 		border-radius: 22px;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
+		justify-content: center;
 	}
 
 	body.academy-page .gallery-card:before {
 		content: '';
 		position: absolute;
 		inset: 0;
-		background: linear-gradient(0deg, rgba(4, 9, 14, 0.78), rgba(4, 9, 14, 0.1));
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0));
 	}
 
 	body.academy-page .gallery-card .content {
 		position: relative;
 		z-index: 1;
 		padding: 1.5em;
+		text-align: center;
 	}
 
 	body.academy-page .gallery-card h3,
 	body.academy-page .gallery-card p {
-		color: #fff;
+		color: #ffffff !important;
+		text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 	}
 
-	body.academy-page .gallery-card.img-1 { background-image: url('../images/niñosrodando (1).jpg'); background-size: cover; background-position: center; background-color: red; }
-	body.academy-page .gallery-card.img-2 { background-image: url('../images/niñosrodando (2).jpg'); background-size: cover; background-position: center; background-color: blue; }
-	body.academy-page .gallery-card.img-3 { background-image: url('../images/banner4.jpg'); background-size: cover; background-position: center; background-color: green; }
+	body.academy-page .gallery-card.img-1 { background-image: url('/images/niñosrodando (1).jpg'); background-size: cover; background-position: center; }
+	body.academy-page .gallery-card.img-2 { background-image: url('/images/entrenamiento.jpeg'); background-size: cover; background-position: center; }
+	body.academy-page .gallery-card.img-3 { background-image: url('/images/team.jpeg'); background-size: cover; background-position: center; }
+
+	body.academy-page .academy-banner-image {
+		min-height: 20rem;
+		border-radius: 24px;
+		background-image: linear-gradient(180deg, rgba(9, 17, 26, 0.22), rgba(9, 17, 26, 0.05)), url('/images/banner4.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: 0 25px 60px rgba(6, 25, 20, 0.08);
+		margin: 2rem 0;
+	}
 
 	body.academy-page .box.page-content .testimonial {
 		border-left: 4px solid #96b28a;
