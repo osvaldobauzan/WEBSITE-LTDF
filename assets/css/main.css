@@ -2488,6 +2488,335 @@ input, select, textarea {
 		background-size: cover;
 	}
 
+	body.academy-page {
+		background: #f3f7f4;
+		color: #29342f;
+	}
+
+	body.academy-page #banner.banner-academy {
+		background-image: linear-gradient(135deg, rgba(5, 11, 18, 0.18), rgba(20, 44, 38, 0.18)), url("../../images/banner4.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: overlay;
+		background-color: rgba(12, 26, 36, 0.15);
+		padding: 8.5em 0 6.5em 0;
+		min-height: 40rem;
+	}
+
+	@media screen and (max-width: 980px) {
+		body.academy-page #banner.banner-academy {
+			min-height: auto;
+			padding: 6.5em 0 4.5em 0;
+		}
+	}
+
+	body.academy-page #banner.banner-academy .content {
+		max-width: 48rem;
+		width: min(48rem, calc(100% - 3rem));
+		margin: 0 auto;
+		padding: 4em 2.2em;
+		border-radius: 28px;
+		border: 1px solid rgba(255,255,255,0.18);
+		background: rgba(10, 20, 29, 0.22);
+		box-shadow: 0 35px 90px rgba(0,0,0,0.18);
+		backdrop-filter: blur(18px);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	body.academy-page #banner.banner-academy .content h2,
+	body.academy-page #banner.banner-academy .content p {
+		color: #ffffff;
+	}
+
+	body.academy-page #banner.banner-academy .content p {
+		font-size: 1.15em;
+		line-height: 1.9em;
+		margin-bottom: 1.8em;
+		max-width: 34rem;
+	}
+
+	body.academy-page .button.large {
+		padding: 1.1em 2.4em;
+	}
+
+	body.academy-page .button.alt.large {
+		background: #0b1d41;
+		color: #DAEFB3;
+	}
+
+	body.academy-page .button.large:hover,
+	body.academy-page .button.alt.large:hover {
+		opacity: 0.96;
+	}
+
+	body.academy-page .box.page-content,
+	body.academy-page .box.feature,
+	body.academy-page .box.features {
+		background: #ffffff;
+		border-radius: 24px;
+		box-shadow: 0 25px 60px rgba(6, 25, 20, 0.08);
+		padding: 2.5em;
+	}
+
+	body.academy-page .box.features {
+		padding: 2.5em 1.75em;
+	}
+
+	body.academy-page .box.page-content header h2 {
+		font-size: 2.8rem;
+		letter-spacing: 0.06em;
+	}
+
+	body.academy-page .box.page-content header > p {
+		font-size: 1.14em;
+		color: #4e6358;
+		line-height: 1.9em;
+	}
+
+	body.academy-page .box.feature h2.major span,
+	body.academy-page .box.page-content h2 {
+		background: none;
+	}
+
+	body.academy-page .box.features .box.feature {
+		padding: 1.75em;
+		margin-bottom: 1.5em;
+		border: 1px solid rgba(125, 154, 146, 0.14);
+	}
+
+	body.academy-page .box.features .box.feature h3 a,
+	body.academy-page .box.feature h3 {
+		color: #243119;
+	}
+
+	body.academy-page .box.features .box.feature p,
+	body.academy-page .box.feature p {
+		color: #5d6d61;
+	}
+
+	body.academy-page .box.page-content .row > .col-6 {
+		padding: 0 1em;
+	}
+
+	body.academy-page .box.page-content .row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1em;
+	}
+
+	body.academy-page .box.page-content .row > .col-6 {
+		width: 50%;
+	}
+
+	body.academy-page .box.features .row {
+		margin: 0 -1em;
+	}
+
+	body.academy-page .box.features .row > .col-4,
+	body.academy-page .box.features .row > .col-6 {
+		padding: 0 1em;
+	}
+
+	body.academy-page .box.features .row > .col-4 {
+		width: 33.33333%;
+	}
+
+	body.academy-page .box.features .row > .col-6 {
+		width: 50%;
+	}
+
+	@media screen and (max-width: 980px) {
+		body.academy-page .box.page-content .row > .col-6,
+		body.academy-page .box.features .row > .col-4,
+		body.academy-page .box.features .row > .col-6 {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	body.academy-page .academy-summary {
+		display: grid;
+		grid-template-columns: 1.6fr 1fr;
+		gap: 1.5em;
+	}
+
+	@media screen and (max-width: 980px) {
+		body.academy-page .academy-summary {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	body.academy-page #banner.banner-academy .content {
+		padding: 4em 2.2em;
+	}
+
+	@media screen and (max-width: 736px) {
+		body.academy-page #banner.banner-academy .content {
+			padding: 3.2em 1.5em;
+		}
+	}
+
+	body.academy-page .academy-summary .box.feature {
+		background: linear-gradient(180deg, #fff, #f7fbf7);
+	}
+
+	body.academy-page .academy-badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.85em;
+		margin: 1.5em 0 0;
+	}
+
+	body.academy-page .academy-badges span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.55em;
+		padding: 0.85em 1.1em;
+		border-radius: 999px;
+		background: rgba(34, 66, 52, 0.09);
+		color: #20412c;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+	}
+
+	body.academy-page .academy-list {
+		list-style: none;
+		padding: 0;
+		margin: 1.35em 0 0;
+		color: #4b5f52;
+	}
+
+	body.academy-page .academy-list li {
+		padding-left: 1.5em;
+		margin-bottom: 0.85em;
+		position: relative;
+	}
+
+	body.academy-page .academy-list li:before {
+		content: '•';
+		position: absolute;
+		left: 0;
+		color: #80a17f;
+	}
+
+	body.academy-page .highlight-card {
+		background: linear-gradient(180deg, #f7fbf7, #ffffff);
+		border-color: rgba(117, 146, 128, 0.18);
+	}
+
+	body.academy-page .coach-card {
+		background: linear-gradient(180deg, #fff, #edf5ed);
+		border: 1px solid rgba(132, 169, 148, 0.22);
+		text-align: left;
+	}
+
+	body.academy-page .coach-card .coach-avatar {
+		width: 5.5rem;
+		height: 5.5rem;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-bottom: 1.5em;
+	}
+
+	body.academy-page .coach-card .coach-avatar img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	body.academy-page .coach-card h3 {
+		margin-top: 0;
+	}
+
+	body.academy-page .coach-card p {
+		margin-bottom: 0;
+	}
+
+	body.academy-page .gallery-card {
+		position: relative;
+		min-height: 18rem;
+		color: #fff;
+		overflow: hidden;
+		border-radius: 22px;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	body.academy-page .gallery-card:before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(0deg, rgba(4, 9, 14, 0.78), rgba(4, 9, 14, 0.1));
+	}
+
+	body.academy-page .gallery-card .content {
+		position: relative;
+		z-index: 1;
+		padding: 1.5em;
+	}
+
+	body.academy-page .gallery-card h3,
+	body.academy-page .gallery-card p {
+		color: #fff;
+	}
+
+	body.academy-page .gallery-card.img-1 { background-image: url('../images/niñosrodando (1).jpg'); background-size: cover; background-position: center; background-color: red; }
+	body.academy-page .gallery-card.img-2 { background-image: url('../images/niñosrodando (2).jpg'); background-size: cover; background-position: center; background-color: blue; }
+	body.academy-page .gallery-card.img-3 { background-image: url('../images/banner4.jpg'); background-size: cover; background-position: center; background-color: green; }
+
+	body.academy-page .box.page-content .testimonial {
+		border-left: 4px solid #96b28a;
+		padding-left: 1.4em;
+		color: #2f413a;
+		font-style: italic;
+	}
+
+	body.academy-page .box.page-content .testimonial strong {
+		display: block;
+		margin-bottom: 0.9em;
+	}
+
+	body.academy-page .info-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5em;
+	}
+
+	@media screen and (max-width: 980px) {
+		body.academy-page .info-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	body.academy-page .info-grid .card {
+		background: #edf6ef;
+		border-radius: 22px;
+		padding: 1.7em;
+		border: 1px solid rgba(77, 107, 88, 0.14);
+	}
+
+	body.academy-page .info-grid .card h3 {
+		margin-bottom: 0.8em;
+	}
+
+	body.academy-page .box.page-content .feature-text {
+		margin: 1.4em 0 0;
+	}
+
+	body.academy-page .box.page-content .feature-text strong {
+		color: #2a4036;
+	}
+
+	body.academy-page .academy-cta {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
 		#banner .content {
 			position: relative;
 			background-color: rgba(21, 28, 23, 0.55);
